@@ -4,53 +4,68 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Chris Chan · Product Manager</title>
-<meta name="description" content="Chris Chan: product manager. Product Manager of Your Light and Mindous, both live on the App Store. Resume, portfolio, GitHub and LinkedIn in one place.">
-<meta name="theme-color" content="#0b0d12">
+<meta name="description" content="Chris Chan, product manager. Product Manager of Your Light and Mindous, both live on the App Store. Résumé, portfolio, GitHub and LinkedIn in one place.">
+<meta name="theme-color" content="#F7F6F3">
+<link rel="canonical" href="https://chanyenqi018-ui.github.io/">
+<link rel="icon" href="assets/photo.jpg">
 <meta property="og:title" content="Chris Chan · Product Manager">
-<meta property="og:description" content="Resume, portfolio, and my apps: Your Light and Mindous.">
-<meta property="og:image" content="assets/photo.jpg">
+<meta property="og:description" content="Résumé, portfolio, and my apps: Your Light and Mindous.">
+<meta property="og:image" content="https://chanyenqi018-ui.github.io/assets/og.jpg">
+<meta property="og:url" content="https://chanyenqi018-ui.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0b0d12;--card:#151922;--line:#232938;--text:#f2f4f8;--mute:#9aa3b5;--accent:#ffcf6b;--accent2:#7aa7ff}
+:root{--blue:#33478F;--peach:#F1A878;--canvas:#F7F6F3;--warm:#FFF1E8;--accent:#93532E;--ink:#18213A;--mute:#5E6880;--line:rgba(51,71,143,.12);
+--serif:"Gelasio",Georgia,"Times New Roman",serif;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html{background:var(--bg)}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Inter","Noto Sans",Arial,sans-serif;color:var(--text);background:radial-gradient(900px 420px at 50% -80px,#1c2540 0,transparent 70%),var(--bg);line-height:1.5}
-main{max-width:480px;margin:0 auto;padding:36px 18px 56px}
+body{margin:0;color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100vh;
+background:radial-gradient(700px 480px at 90% -60px,rgba(241,168,120,.38),rgba(241,168,120,0) 70%),radial-gradient(640px 520px at -10% 22%,rgba(212,220,247,.8),rgba(212,220,247,0) 70%),linear-gradient(180deg,var(--canvas),var(--warm) 65%,var(--canvas));background-attachment:fixed}
+main{max-width:560px;margin:0 auto;padding:calc(38px + env(safe-area-inset-top)) 18px 56px}
+a{color:inherit}
 .hero{text-align:center}
-.avatar{width:128px;height:128px;border-radius:50%;object-fit:cover;object-position:50% 20%;border:3px solid var(--accent);box-shadow:0 0 0 6px rgba(255,207,107,.12),0 12px 40px rgba(0,0,0,.5)}
-h1{font-size:28px;margin:18px 0 4px;letter-spacing:-.02em}
-.headline{margin:0 auto;color:var(--mute);font-size:15px;max-width:340px}
-.chip{display:inline-block;margin-top:12px;padding:4px 12px;border:1px solid var(--line);border-radius:99px;font-size:12px;color:var(--accent);background:rgba(255,207,107,.07)}
-.icons{display:flex;justify-content:center;gap:12px;margin:20px 0 4px;flex-wrap:wrap}
-.icons a{width:44px;height:44px;border-radius:50%;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;color:var(--text)}
+.avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 20%;border:4px solid #fff;box-shadow:0 0 0 3px var(--peach),0 18px 40px -12px rgba(147,83,46,.45)}
+h1{font-family:var(--serif);font-weight:500;font-size:38px;margin:20px 0 4px;letter-spacing:-.02em;color:var(--blue)}
+.role{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.headline{margin:14px auto 0;color:var(--mute);font-size:16px;max-width:380px}
+.chip{display:inline-block;margin-top:16px;padding:6px 14px;border-radius:99px;font-size:12.5px;color:var(--blue);background:rgba(255,255,255,.8);box-shadow:0 0 0 1px var(--line)}
+.icons{display:flex;justify-content:center;gap:12px;margin:22px 0 4px;flex-wrap:wrap}
+.icons a{width:46px;height:46px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px var(--line),0 8px 18px -8px rgba(34,49,106,.25);display:grid;place-items:center;color:var(--blue);transition:transform .15s}
+.icons a:hover{transform:translateY(-2px)}
 .icons svg{width:20px;height:20px;fill:currentColor}
-.links{margin:22px 0 0;display:grid;gap:10px}
-.btn{display:flex;align-items:center;gap:14px;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:16px;color:var(--text);text-decoration:none;font-weight:600;font-size:15px;transition:transform .15s,border-color .15s}
-.btn:hover,.btn:focus-visible{transform:translateY(-1px);border-color:var(--accent);outline:none}
+.links{margin:24px 0 0;display:grid;gap:10px}
+.btn{display:flex;align-items:center;gap:14px;padding:14px 16px;background:rgba(255,255,255,.85);box-shadow:0 0 0 1px var(--line),0 10px 24px -16px rgba(34,49,106,.35);border-radius:18px;color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;transition:transform .15s,box-shadow .15s}
+.btn:hover,.btn:focus-visible{transform:translateY(-1px);box-shadow:0 0 0 1.5px var(--blue),0 14px 28px -16px rgba(34,49,106,.4);outline:none}
 .btn small{display:block;font-weight:400;color:var(--mute);font-size:12.5px}
-.btn .ic{flex:none;width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:#1e2433;font-size:18px}
-.btn.primary{background:linear-gradient(135deg,#ffcf6b,#ffb347);color:#1a1405;border:0}
-.btn.primary small{color:#4a3a10}.btn.primary .ic{background:rgba(255,255,255,.35)}
+.btn .ic{flex:none;width:40px;height:40px;border-radius:11px;display:grid;place-items:center;background:var(--warm);font-size:18px;color:var(--blue);font-weight:700}
+.btn .ic img{width:40px;height:40px;border-radius:11px}
+.btn.primary{background:linear-gradient(135deg,#3A50A0,#22316A);color:#fff;box-shadow:0 16px 30px -14px rgba(34,49,106,.7)}
+.btn.primary small{color:#c9d2f2}.btn.primary .ic{background:rgba(255,255,255,.16);color:#fff}.btn.primary .arrow{color:#fff}
 .btn .arrow{margin-left:auto;color:var(--mute)}
-h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:40px 0 10px}
-.case{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}
-.case h3{margin:0 0 4px;font-size:20px}
-.case p{margin:6px 0;color:#cfd5e2;font-size:14.5px}
-.case ul{margin:10px 0 0;padding-left:18px;color:#cfd5e2;font-size:14.5px}
-.case li{margin:7px 0}.case li b{color:var(--text)}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
-.tags span{font-size:12px;padding:3px 10px;border-radius:99px;background:#1e2433;color:var(--accent2)}
-.cta{margin-top:14px}
-footer{text-align:center;color:var(--mute);font-size:12px;margin-top:36px}
-[hidden]{display:none!important}
+h2{font-family:var(--serif);font-weight:500;font-size:26px;color:var(--blue);margin:46px 0 14px;text-align:center}
+h2 em{color:var(--accent)}
+.case{background:rgba(255,255,255,.88);border-radius:26px;overflow:hidden;box-shadow:0 0 0 1px var(--line),0 24px 44px -26px rgba(34,49,106,.4);margin-bottom:16px}
+.case img.cover{width:100%;height:auto;display:block}
+.case .body{padding:20px 20px 22px}
+.case h3{margin:0 0 4px;font-family:var(--serif);font-weight:600;font-size:24px;color:var(--blue)}
+.case p{margin:6px 0;color:var(--mute);font-size:15px}
+.case ul{margin:12px 0 0;padding-left:18px;color:var(--mute);font-size:14.5px}
+.case li{margin:7px 0}.case li b{color:var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 16px}
+.tags span{font-size:12px;padding:4px 11px;border-radius:99px;background:var(--warm);color:var(--accent);font-weight:600}
+.cta-row{display:grid;gap:10px}
+.btn.cta{padding:12px 14px}
+footer{text-align:center;color:var(--mute);font-size:12.5px;margin-top:38px}
 </style>
 </head>
 <body>
 <main>
   <section class="hero">
-    <!-- PHOTO: assets/photo.jpg is a crop of "Jordan Chris Chan in suit.jpeg" (Documents/Pictures Macbook air 2019). Swap for a better headshot any time (square, 640px+). -->
-    <img class="avatar" src="assets/photo.jpg" alt="Chris Chan in a suit">
+    <img class="avatar" src="assets/photo.jpg" alt="Chris Chan" width="132" height="132">
     <h1>Chris Chan</h1>
-    <p class="headline">Product manager. I led product for two iPhone apps, Your Light and Mindous. Both are live on the App Store.</p>
+    <span class="role">Product Manager</span>
+    <p class="headline">I led product for two iPhone apps, Your Light and Mindous. Both are live on the App Store.</p>
     <span class="chip">Open to product roles · Malaysia (KL / hybrid) or remote</span>
     <nav class="icons" aria-label="Quick contacts">
       <a href="https://wa.me/60183969651" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.300 2.400 1.500.3.100.5.100.600-.1l.9-1.100c.2-.3.4-.2.6-.1l1.900.9c.3.1.4.2.5.3.1.2.1.700-.1 1.300z"/></svg></a>
@@ -62,40 +77,50 @@ footer{text-align:center;color:var(--mute);font-size:12px;margin-top:36px}
   </section>
 
   <section class="links" aria-label="Links">
-    <a class="btn primary" href="assets/Jordan-Chris-Chan-Resume.pdf"><span class="ic">📄</span><span>My Résumé (PDF)<small>Product manager · 2 pages</small></span><span class="arrow">↓</span></a>
+    <a class="btn primary" href="assets/Jordan-Chris-Chan-Resume.pdf"><span class="ic">📄</span><span>My Résumé (PDF)<small>Product manager</small></span><span class="arrow">↓</span></a>
+    <a class="btn" href="https://www.behance.net/jordanchanyenqi"><span class="ic">Bē</span><span>Portfolio on Behance<small>Case studies: Your Light and Mindous</small></span><span class="arrow">↗</span></a>
     <a class="btn" href="https://www.linkedin.com/in/jordan-chan-yen-qi/"><span class="ic">in</span><span>Connect on LinkedIn</span><span class="arrow">↗</span></a>
     <a class="btn" href="https://github.com/chanyenqi018-ui"><span class="ic">⌘</span><span>GitHub<small>Public sites and support pages</small></span><span class="arrow">↗</span></a>
-    <a class="btn" href="https://chanyenqi018-ui.github.io/your-light/"><span class="ic">✨</span><span>Your Light · website<small>My latest project</small></span><span class="arrow">↗</span></a>
-    <a class="btn" href="https://apps.apple.com/app/your-light-small-steps/id6811325600"><span class="ic">📱</span><span>App Store<small>Your Light: Small Steps (iPhone)</small></span><span class="arrow">↗</span></a>
-    <a class="btn" href="https://apps.apple.com/my/app/mindous/id6805085913"><span class="ic">🎙️</span><span>Mindous · App Store<small>Voice app: say what you do (iPhone)</small></span><span class="arrow">↗</span></a>
-    <a class="btn" href="https://www.behance.net/jordanchanyenqi"><span class="ic">Bē</span><span>Portfolio on Behance<small>Case studies: Your Light and Mindous</small></span><span class="arrow">↗</span></a>
-    <a class="btn" href="https://xessentialoils.com"><span class="ic">🌿</span><span>X Essential Oils<small>Essential-oils brand I founded · xessentialoils.com</small></span><span class="arrow">↗</span></a>
-    <a class="btn" href="mailto:chanyenqi018@gmail.com"><span class="ic">✉️</span><span>Email me<small>chanyenqi018@gmail.com</small></span><span class="arrow">↗</span></a>
   </section>
 
-  <h2>Featured projects</h2>
+  <h2>Featured <em>projects</em></h2>
   <article class="case" id="your-light">
+    <a href="https://chanyenqi018-ui.github.io/your-light/"><img class="cover" src="assets/cover-your-light.webp" alt="Your Light: case study cover" width="900" height="643"></a>
+    <div class="body">
     <h3>Your Light</h3>
-    <p>An iPhone app that helps people take one small next step, kindly, when life feels heavy. I am the product manager. Version 1.0 is live on the App Store.</p>
+    <p>An iPhone app that helps people take one small next step, kindly, when life feels heavy. I am the product manager. Live on the App Store in English, Bahasa Melayu and Simplified Chinese.</p>
     <ul>
       <li><b>Problem:</b> big tasks feel too heavy to start, and most apps add pressure with streaks and scores.</li>
-      <li><b>What I did:</b> product vision, scope, UX and brand direction, content, pricing, and App Store release.</li>
-      <li><b>Business model:</b> free to download now. A yearly plan with a 7-day free trial is planned for the next release.</li>
-      <li><b>Release:</b> v1.0 live in English, Bahasa Melayu and Simplified Chinese. v1.1 is in preparation.</li>
+      <li><b>What I did:</b> product vision, scope, UX and brand direction, content, and App Store release.</li>
     </ul>
-    <div class="tags"><span>Product management</span><span>UX and brand</span><span>Pricing</span><span>App Store</span></div>
-    <a class="btn cta" href="https://chanyenqi018-ui.github.io/your-light/"><span class="ic">✨</span><span>Visit the Your Light site</span><span class="arrow">↗</span></a>
+    <div class="tags"><span>Product management</span><span>UX and brand</span><span>App Store</span></div>
+    <div class="cta-row">
+      <a class="btn cta" href="https://chanyenqi018-ui.github.io/your-light/"><span class="ic"><img src="assets/your-light-icon-b1.png" alt="" width="40" height="40"></span><span>Visit the Your Light site<small>chanyenqi018-ui.github.io/your-light</small></span><span class="arrow">↗</span></a>
+      <a class="btn cta" href="https://apps.apple.com/app/your-light-small-steps/id6811325600"><span class="ic">📱</span><span>Your Light on the App Store<small>Your Light: Small Steps (iPhone)</small></span><span class="arrow">↗</span></a>
+    </div>
+    </div>
   </article>
-  <article class="case" id="mindous" style="margin-top:14px">
+  <article class="case" id="mindous">
+    <img class="cover" src="assets/cover-mindous.webp" alt="Mindous: case study cover" width="900" height="579">
+    <div class="body">
     <h3>Mindous</h3>
-    <p>A voice app where three minutes of your real voice tells people what you do for a living. No feed deciding what you hear. I am the product manager. Version 1.0 is live on the App Store.</p>
+    <p>A voice app where three minutes of your real voice tells people what you do for a living. No feed deciding what you hear. I am the product manager. Live on the App Store.</p>
     <ul>
       <li><b>Problem:</b> text profiles are flat, and ranking feeds decide who gets heard.</li>
       <li><b>What I did:</b> positioning, product rules (time-ordered feed, private by default), safety features, brand and App Store release.</li>
     </ul>
     <div class="tags"><span>Product management</span><span>Voice</span><span>Brand</span><span>App Store</span></div>
-    <a class="btn cta" href="https://apps.apple.com/my/app/mindous/id6805085913"><span class="ic">🎙️</span><span>See Mindous on the App Store</span><span class="arrow">↗</span></a>
+    <div class="cta-row">
+      <a class="btn cta" href="https://apps.apple.com/my/app/mindous/id6805085913"><span class="ic"><img src="assets/mindous-icon.png" alt="" width="40" height="40"></span><span>Mindous on the App Store<small>Voice app: say what you do (iPhone)</small></span><span class="arrow">↗</span></a>
+    </div>
+    </div>
   </article>
+
+  <h2>More <em>from me</em></h2>
+  <section class="links" aria-label="More links">
+    <a class="btn" href="https://xessentialoils.com"><span class="ic">🌿</span><span>X Essential Oils<small>Essential-oils brand I founded · xessentialoils.com</small></span><span class="arrow">↗</span></a>
+    <a class="btn" href="mailto:chanyenqi018@gmail.com"><span class="ic">✉️</span><span>Email me<small>chanyenqi018@gmail.com</small></span><span class="arrow">↗</span></a>
+  </section>
 
   <footer>© 2026 Chris Chan · Malaysia</footer>
 </main>
