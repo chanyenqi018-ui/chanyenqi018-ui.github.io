@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Chris Chan · Product Manager</title>
-<meta name="description" content="Chris Chan, product manager. Product Manager of Your Light and Mindous, both live on the App Store. Résumé, portfolio, GitHub and LinkedIn in one place.">
+<meta name="description" content="Chris Chan, Product Manager. Résumé, portfolio and contacts in one place.">
 <meta name="theme-color" content="#F7F6F3">
 <link rel="canonical" href="https://chanyenqi018-ui.github.io/">
 <link rel="icon" href="assets/photo.jpg">
 <meta property="og:title" content="Chris Chan · Product Manager">
-<meta property="og:description" content="Résumé, portfolio, and my apps: Your Light and Mindous.">
+<meta property="og:description" content="Résumé, portfolio and contacts.">
 <meta property="og:image" content="https://chanyenqi018-ui.github.io/assets/og.jpg">
 <meta property="og:url" content="https://chanyenqi018-ui.github.io/">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,108 +20,49 @@
 :root{--blue:#33478F;--peach:#F1A878;--canvas:#F7F6F3;--warm:#FFF1E8;--accent:#93532E;--ink:#18213A;--mute:#5E6880;--line:rgba(51,71,143,.12);
 --serif:"Gelasio",Georgia,"Times New Roman",serif;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-body{margin:0;color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100vh;
+body{margin:0;color:var(--ink);font-family:var(--sans);line-height:1.4;-webkit-font-smoothing:antialiased;min-height:100vh;
 background:radial-gradient(700px 480px at 90% -60px,rgba(241,168,120,.38),rgba(241,168,120,0) 70%),radial-gradient(640px 520px at -10% 22%,rgba(212,220,247,.8),rgba(212,220,247,0) 70%),linear-gradient(180deg,var(--canvas),var(--warm) 65%,var(--canvas));background-attachment:fixed}
-main{max-width:560px;margin:0 auto;padding:calc(38px + env(safe-area-inset-top)) 18px 56px}
+main{max-width:480px;margin:0 auto;padding:calc(40px + env(safe-area-inset-top)) 20px calc(36px + env(safe-area-inset-bottom))}
 a{color:inherit}
 .hero{text-align:center}
-.avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 20%;border:4px solid #fff;box-shadow:0 0 0 3px var(--peach),0 18px 40px -12px rgba(147,83,46,.45)}
-h1{font-family:var(--serif);font-weight:500;font-size:38px;margin:20px 0 4px;letter-spacing:-.02em;color:var(--blue)}
-.role{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
-.headline{margin:14px auto 0;color:var(--mute);font-size:16px;max-width:380px}
-.chip{display:inline-block;margin-top:16px;padding:6px 14px;border-radius:99px;font-size:12.5px;color:var(--blue);background:rgba(255,255,255,.8);box-shadow:0 0 0 1px var(--line)}
-.icons{display:flex;justify-content:center;gap:12px;margin:22px 0 4px;flex-wrap:wrap}
-.icons a{width:46px;height:46px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px var(--line),0 8px 18px -8px rgba(34,49,106,.25);display:grid;place-items:center;color:var(--blue);transition:transform .15s}
-.icons a:hover{transform:translateY(-2px)}
-.icons svg{width:20px;height:20px;fill:currentColor}
-.links{margin:24px 0 0;display:grid;gap:10px}
-.btn{display:flex;align-items:center;gap:14px;padding:14px 16px;background:rgba(255,255,255,.85);box-shadow:0 0 0 1px var(--line),0 10px 24px -16px rgba(34,49,106,.35);border-radius:18px;color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;transition:transform .15s,box-shadow .15s}
+.avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;object-position:50% 20%;border:4px solid #fff;box-shadow:0 0 0 3px var(--peach),0 18px 40px -12px rgba(147,83,46,.45)}
+h1{font-family:var(--serif);font-weight:500;font-size:34px;margin:18px 0 4px;letter-spacing:-.02em;color:var(--blue)}
+.role{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.tag{margin:10px auto 0;max-width:300px;color:var(--mute);font-size:14.5px;line-height:1.45}
+.social{display:flex;justify-content:center;gap:14px;margin:22px 0 0}
+.social a{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.92);box-shadow:0 0 0 1px var(--line),0 8px 18px -12px rgba(34,49,106,.4);transition:transform .15s}
+.social a:hover,.social a:focus-visible{transform:translateY(-2px);outline:none;box-shadow:0 0 0 1.5px var(--blue)}
+.social svg{width:22px;height:22px;display:block}
+.links{margin:26px 0 0;display:grid;gap:12px}
+.btn{position:relative;display:flex;align-items:center;justify-content:center;min-height:60px;padding:12px 56px;background:rgba(255,255,255,.92);box-shadow:0 0 0 1px var(--line),0 10px 24px -16px rgba(34,49,106,.35);border-radius:999px;color:var(--ink);text-decoration:none;text-align:center;transition:transform .15s,box-shadow .15s}
 .btn:hover,.btn:focus-visible{transform:translateY(-1px);box-shadow:0 0 0 1.5px var(--blue),0 14px 28px -16px rgba(34,49,106,.4);outline:none}
-.btn small{display:block;font-weight:400;color:var(--mute);font-size:12.5px}
-.btn .ic{flex:none;width:40px;height:40px;border-radius:11px;display:grid;place-items:center;background:var(--warm);font-size:18px;color:var(--blue);font-weight:700}
-.btn .ic img{width:40px;height:40px;border-radius:11px}
-.btn.primary{background:linear-gradient(135deg,#3A50A0,#22316A);color:#fff;box-shadow:0 16px 30px -14px rgba(34,49,106,.7)}
-.btn.primary small{color:#c9d2f2}.btn.primary .ic{background:rgba(255,255,255,.16);color:#fff}.btn.primary .arrow{color:#fff}
-.btn .arrow{margin-left:auto;color:var(--mute)}
-h2{font-family:var(--serif);font-weight:500;font-size:26px;color:var(--blue);margin:46px 0 14px;text-align:center}
-h2 em{color:var(--accent)}
-.case{background:rgba(255,255,255,.88);border-radius:26px;overflow:hidden;box-shadow:0 0 0 1px var(--line),0 24px 44px -26px rgba(34,49,106,.4);margin-bottom:16px}
-.case img.cover{width:100%;height:auto;display:block}
-.case .body{padding:20px 20px 22px}
-.case h3{margin:0 0 4px;font-family:var(--serif);font-weight:600;font-size:24px;color:var(--blue)}
-.case p{margin:6px 0;color:var(--mute);font-size:15px}
-.case ul{margin:12px 0 0;padding-left:18px;color:var(--mute);font-size:14.5px}
-.case li{margin:7px 0}.case li b{color:var(--ink)}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 16px}
-.tags span{font-size:12px;padding:4px 11px;border-radius:99px;background:var(--warm);color:var(--accent);font-weight:600}
-.cta-row{display:grid;gap:10px}
-.btn.cta{padding:12px 14px}
-footer{text-align:center;color:var(--mute);font-size:12.5px;margin-top:38px}
+.btn .ic{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
+.btn .ic svg{width:22px;height:22px;display:block}
+.btn b{font-weight:600;font-size:16px}
+footer{text-align:center;color:var(--mute);font-size:12.5px;margin-top:34px}
+@media (min-width:700px){main{padding-top:64px}}
 </style>
 </head>
 <body>
 <main>
   <section class="hero">
-    <img class="avatar" src="assets/photo.jpg" alt="Chris Chan" width="132" height="132">
+    <img class="avatar" src="assets/photo.jpg" alt="Chris Chan" width="112" height="112">
     <h1>Chris Chan</h1>
     <span class="role">Product Manager</span>
-    <p class="headline">I led product for two iPhone apps, Your Light and Mindous. Both are live on the App Store.</p>
-    <span class="chip">Open to product roles · Malaysia (KL / hybrid) or remote</span>
-    <nav class="icons" aria-label="Quick contacts">
-      <a href="https://wa.me/60183969651" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.300 2.400 1.500.3.100.5.100.600-.1l.9-1.100c.2-.3.4-.2.6-.1l1.900.9c.3.1.4.2.5.3.1.2.1.700-.1 1.300z"/></svg></a>
-      <a href="https://www.linkedin.com/in/jordan-chan-yen-qi/" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4v11H3v-11zm7 0h3.8v1.6h.1c.5-1 1.800-2 3.800-2 4 0 4.800 2.600 4.800 6V20.500h-4v-5c0-1.200 0-2.800-1.700-2.800s-2 1.300-2 2.700v5.100h-4v-11z"/></svg></a>
-      <a href="https://github.com/chanyenqi018-ui" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5A11.500 11.500 0 0 0 8.400 22.900c.6.100.8-.2.8-.6v-2c-3.200.7-3.900-1.500-3.900-1.500-.5-1.300-1.300-1.700-1.300-1.700-1-.7.1-.7.1-.7 1.200.1 1.800 1.200 1.800 1.200 1 1.800 2.700 1.300 3.400 1 .1-.8.4-1.300.7-1.600-2.600-.3-5.300-1.300-5.300-5.700 0-1.300.5-2.300 1.200-3.100-.1-.3-.5-1.500.1-3.100 0 0 1-.3 3.200 1.200a11 11 0 0 1 5.800 0C17 5.600 18 5.900 18 5.900c.6 1.600.2 2.800.1 3.100.8.800 1.200 1.800 1.200 3.100 0 4.400-2.700 5.400-5.300 5.700.4.400.8 1.100.8 2.200v3.300c0 .3.200.7.800.6A11.500 11.500 0 0 0 12 .5z"/></svg></a>
-      <a href="mailto:chanyenqi018@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.500L4.500 7v.1L12 13l7.500-5.900V7L12 12.500z"/></svg></a>
-      <a href="https://t.me/Christopherjordan" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21.500 3.300 2.700 10.600c-1.300.5-1.300 1.200-.2 1.500l4.800 1.500 1.800 5.600c.2.600.1.800.7.800.5 0 .7-.2 1-.5l2.300-2.300 4.800 3.500c.9.500 1.500.2 1.700-.8l3.100-14.700c.3-1.300-.5-1.800-1.200-1.600z"/></svg></a>
-    </nav>
+    <p class="tag">I turn user needs into apps people use. Two of mine are live on the App Store.</p>
   </section>
-
-  <section class="links" aria-label="Links">
-    <a class="btn primary" href="assets/Jordan-Chris-Chan-Resume.pdf"><span class="ic">📄</span><span>My Résumé (PDF)<small>Product manager</small></span><span class="arrow">↓</span></a>
-    <a class="btn" href="https://www.behance.net/jordanchanyenqi"><span class="ic">Bē</span><span>Portfolio on Behance<small>Case studies: Your Light and Mindous</small></span><span class="arrow">↗</span></a>
-    <a class="btn" href="https://www.linkedin.com/in/jordan-chan-yen-qi/"><span class="ic">in</span><span>Connect on LinkedIn</span><span class="arrow">↗</span></a>
-    <a class="btn" href="https://github.com/chanyenqi018-ui"><span class="ic">⌘</span><span>GitHub<small>Public sites and support pages</small></span><span class="arrow">↗</span></a>
-  </section>
-
-  <h2>Featured <em>projects</em></h2>
-  <article class="case" id="your-light">
-    <a href="https://chanyenqi018-ui.github.io/your-light/"><img class="cover" src="assets/cover-your-light.webp" alt="Your Light: case study cover" width="900" height="643"></a>
-    <div class="body">
-    <h3>Your Light</h3>
-    <p>An iPhone app that helps people take one small next step, kindly, when life feels heavy. I am the product manager. Live on the App Store in English, Bahasa Melayu and Simplified Chinese.</p>
-    <ul>
-      <li><b>Problem:</b> big tasks feel too heavy to start, and most apps add pressure with streaks and scores.</li>
-      <li><b>What I did:</b> product vision, scope, UX and brand direction, content, and App Store release.</li>
-    </ul>
-    <div class="tags"><span>Product management</span><span>UX and brand</span><span>App Store</span></div>
-    <div class="cta-row">
-      <a class="btn cta" href="https://chanyenqi018-ui.github.io/your-light/"><span class="ic"><img src="assets/your-light-icon-b1.png" alt="" width="40" height="40"></span><span>Visit the Your Light site<small>chanyenqi018-ui.github.io/your-light</small></span><span class="arrow">↗</span></a>
-      <a class="btn cta" href="https://apps.apple.com/app/your-light-small-steps/id6811325600"><span class="ic">📱</span><span>Your Light on the App Store<small>Your Light: Small Steps (iPhone)</small></span><span class="arrow">↗</span></a>
-    </div>
-    </div>
-  </article>
-  <article class="case" id="mindous">
-    <img class="cover" src="assets/cover-mindous.webp" alt="Mindous: case study cover" width="900" height="579">
-    <div class="body">
-    <h3>Mindous</h3>
-    <p>A voice app where three minutes of your real voice tells people what you do for a living. No feed deciding what you hear. I am the product manager. Live on the App Store.</p>
-    <ul>
-      <li><b>Problem:</b> text profiles are flat, and ranking feeds decide who gets heard.</li>
-      <li><b>What I did:</b> positioning, product rules (time-ordered feed, private by default), safety features, brand and App Store release.</li>
-    </ul>
-    <div class="tags"><span>Product management</span><span>Voice</span><span>Brand</span><span>App Store</span></div>
-    <div class="cta-row">
-      <a class="btn cta" href="https://apps.apple.com/my/app/mindous/id6805085913"><span class="ic"><img src="assets/mindous-icon.png" alt="" width="40" height="40"></span><span>Mindous on the App Store<small>Voice app: say what you do (iPhone)</small></span><span class="arrow">↗</span></a>
-    </div>
-    </div>
-  </article>
-
-  <h2>More <em>from me</em></h2>
-  <section class="links" aria-label="More links">
-    <a class="btn" href="https://xessentialoils.com"><span class="ic">🌿</span><span>X Essential Oils<small>Essential-oils brand I founded · xessentialoils.com</small></span><span class="arrow">↗</span></a>
-    <a class="btn" href="mailto:chanyenqi018@gmail.com"><span class="ic">✉️</span><span>Email me<small>chanyenqi018@gmail.com</small></span><span class="arrow">↗</span></a>
-  </section>
-
+  <div class="social" role="group" aria-label="Social links">
+    <a href="https://www.linkedin.com/in/jordan-chan-yen-qi/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    <a href="https://github.com/chanyenqi018-ui" target="_blank" rel="noopener" aria-label="GitHub"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#181717" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+    <a href="https://t.me/Christopherjordan" target="_blank" rel="noopener" aria-label="Telegram"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#26A5E4" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+    <a href="mailto:chanyenqi018@gmail.com" aria-label="Email"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#EA4335" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a>
+  </div>
+  <nav class="links" aria-label="Links">
+    <a class="btn" href="assets/Jordan-Chris-Chan-Resume.pdf"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#33478F" d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM7 13h10v1.6H7V13zm0 3.4h10V18H7v-1.6z"/></svg></span><b>My Résumé</b></a>
+    <a class="btn" href="https://www.behance.net/jordanchanyenqi" target="_blank" rel="noopener"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#1769FF" d="M16.969 16.927a2.561 2.561 0 0 0 1.901.677 2.501 2.501 0 0 0 1.531-.475c.362-.235.636-.584.779-.99h2.585a5.091 5.091 0 0 1-1.9 2.896 5.292 5.292 0 0 1-3.091.88 5.839 5.839 0 0 1-2.284-.433 4.871 4.871 0 0 1-1.723-1.211 5.657 5.657 0 0 1-1.08-1.874 7.057 7.057 0 0 1-.383-2.393c-.005-.8.129-1.595.396-2.349a5.313 5.313 0 0 1 5.088-3.604 4.87 4.87 0 0 1 2.376.563c.661.362 1.231.87 1.668 1.485a6.2 6.2 0 0 1 .943 2.133c.194.821.263 1.666.205 2.508h-7.699c-.063.79.184 1.574.688 2.187ZM6.947 4.084a8.065 8.065 0 0 1 1.928.198 4.29 4.29 0 0 1 1.49.638c.418.303.748.711.958 1.182.241.579.357 1.203.341 1.83a3.506 3.506 0 0 1-.506 1.961 3.726 3.726 0 0 1-1.503 1.287 3.588 3.588 0 0 1 2.027 1.437c.464.747.697 1.615.67 2.494a4.593 4.593 0 0 1-.423 2.032 3.945 3.945 0 0 1-1.163 1.413 5.114 5.114 0 0 1-1.683.807 7.135 7.135 0 0 1-1.928.259H0V4.084h6.947Zm-.235 12.9c.308.004.616-.029.916-.099a2.18 2.18 0 0 0 .766-.332c.228-.158.411-.371.534-.619.142-.317.208-.663.191-1.009a2.08 2.08 0 0 0-.642-1.715 2.618 2.618 0 0 0-1.696-.505h-3.54v4.279h3.471Zm13.635-5.967a2.13 2.13 0 0 0-1.654-.619 2.336 2.336 0 0 0-1.163.259 2.474 2.474 0 0 0-.738.62 2.359 2.359 0 0 0-.396.792c-.074.239-.12.485-.137.734h4.769a3.239 3.239 0 0 0-.679-1.785l-.002-.001Zm-13.813-.648a2.254 2.254 0 0 0 1.423-.433c.399-.355.607-.88.56-1.413a1.916 1.916 0 0 0-.178-.891 1.298 1.298 0 0 0-.495-.533 1.851 1.851 0 0 0-.711-.274 3.966 3.966 0 0 0-.835-.073H3.241v3.631h3.293v-.014ZM21.62 5.122h-5.976v1.527h5.976V5.122Z"/></svg></span><b>My Portfolio on Behance</b></a>
+    <a class="btn" href="https://www.linkedin.com/in/jordan-chan-yen-qi/" target="_blank" rel="noopener"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span><b>Connect me on LinkedIn</b></a>
+    <a class="btn" href="https://github.com/chanyenqi018-ui" target="_blank" rel="noopener"><span class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#181717" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span><b>My GitHub Profile</b></a>
+  </nav>
   <footer>© 2026 Chris Chan · Malaysia</footer>
 </main>
 </body>
